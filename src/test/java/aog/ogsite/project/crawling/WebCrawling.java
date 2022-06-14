@@ -513,7 +513,7 @@ public class WebCrawling {
                     if (i == 0) {
                         String repUrl = url.get(i);
 //                        디렉토리 생성
-                        File newFile = new File("D:\\ogsite\\src\\main\\resources\\static\\image\\Item\\" + firstCategory.toUpperCase() + "\\" + secondCategory + "\\" + itemName);
+                        File newFile = new File("D:\\PCPL-page27\\src\\main\\resources\\static\\image\\Item\\" + firstCategory.toUpperCase() + "\\" + secondCategory + "\\" + itemName);
 
 
                         if (newFile.mkdirs()) {
@@ -527,7 +527,7 @@ public class WebCrawling {
                         URL repImgUrl = new URL(repUrl);
                         BufferedImage repImage = ImageIO.read(repImgUrl);
 //                        대표사진 넣기
-                        FileOutputStream repOut = new FileOutputStream("D:\\ogsite\\src\\main\\resources\\static\\image\\Item\\" + firstCategory.toUpperCase() + "\\" + secondCategory + "\\" + itemName + "\\" + itemName + "0" + ".jpg");
+                        FileOutputStream repOut = new FileOutputStream("D:\\PCPL-page27\\src\\main\\resources\\static\\image\\Item\\" + firstCategory.toUpperCase() + "\\" + secondCategory + "\\" + itemName + "\\" + itemName + "0" + ".jpg");
 
                         String totalUrl = "/image/Item/" + firstCategory.toUpperCase() + "/" + secondCategory + "/" + itemName + "/" + itemName + i + ".jpg";
 
@@ -563,7 +563,7 @@ public class WebCrawling {
                         URL imgUrl = new URL(tempUrl);
                         BufferedImage image = ImageIO.read(imgUrl);
 //                        두번째 사진부터 넣기
-                        FileOutputStream out = new FileOutputStream("D:\\ogsite\\src\\main\\resources\\static\\image\\Item\\" + firstCategory.toUpperCase() + "\\" + secondCategory + "\\" + itemName + "\\" + itemName + i + ".jpg");
+                        FileOutputStream out = new FileOutputStream("D:\\PCPL-page27\\src\\main\\resources\\static\\image\\Item\\" + firstCategory.toUpperCase() + "\\" + secondCategory + "\\" + itemName + "\\" + itemName + i + ".jpg");
 
                         String totalUrl = "/image/Item/" + firstCategory.toUpperCase() + "/" + secondCategory + "/" + itemName + "/" + itemName + i + ".jpg";
 
